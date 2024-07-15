@@ -74,3 +74,51 @@ img{
         transform: rotateX(90deg);
       }
 }
+@media (max-width: 800px){
+    .stage-cube-cont{
+        .cubespinner{
+            transform-origin: 100px 100px 0;
+            margin-left: calc(50% - 100px);
+            div{
+                width: 200px;
+                height: 200px;
+            }
+            .face1 {
+              transform: translateZ(100px);
+            }
+            .face2 {
+              transform: rotateY(90deg) translateZ(100px);
+            }
+            .face3 {
+              transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+            }
+            .face4 {
+              transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+            }
+            .face5 {
+              transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+            }
+            .face6 {
+              transform: rotateX(-90deg) translateZ(100px);
+            }
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .about-page{
+        .text-zone{
+            width: 80%;
+            left: 80px;
+            h1{
+                font-size: 30px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+    .stage-cube-cont{
+        display: none;
+    }
+}

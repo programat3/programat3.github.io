@@ -15,7 +15,7 @@ const Home = () => {
                    Data Analyst
                 </h1>
                 <h2>
-                    Fullstack Web & Mobile Developer / Computer Programmer Analyst / Game Developer
+                    Fullstack Web & Mobile Developer / Computer Programmer / Game Developer
                 </h2>
             </div>
             <div className='picture'>

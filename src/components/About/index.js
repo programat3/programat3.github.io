@@ -14,21 +14,13 @@ const About = () => {
                     About Me
                 </h1>
                 <p>
-                    I am a Computer Programmer Analyst with a passion 
-                    for technology and innovation. I have experience in 
-                    Fullstack Web & Mobile Development, Data Analysis, and Game Development. 
+                I am a Computer Programmer Analyst with a passion for technology and innovation. I have experience in Fullstack Web & Mobile Development, Data Analysis, and Game Development.
                 </p>
                 <p>
-                    During my time as a student at Duoc UC, I was assigned CITT Leader
-                    (Centro de Innovación y Transferencia Tecnológica) where I was responsible for 
-                    guiding and mentoring my peers in the development of their projects. As well as
-                    being assigned MMT Leader (Más Mujeres en las TICs) where I was responsible for
-                    promoting the participation of women in the technology industry.
+                As a student at Duoc UC, I was assigned CITT Leader (Centro de Innovación y Transferencia Tecnológica), where I was responsible for guiding and mentoring my peers in developing their projects as well as being assigned MMT Leader (Más Mujeres en las TICs) where I was responsible for promoting the participation of women in the technology industry.
                 </p>
                 <p>
-                    I enjoy new challenges and learning oportunities,
-                    as well as volunteering and advocating for social causes.
-                    I am currently looking for a new opportunity to grow my career. 
+                I enjoy new challenges, learning opportunities, volunteering, and advocating for social causes. I am currently looking for a new opportunity to grow my career.
                 </p>
             </div>
             <div className='stage-cube-cont'>

@@ -7,7 +7,8 @@ body {
   font: 300 11px/11.4 'Cherry Monospace-Light', 'sans-serif';
   color: #444;
   background-color: #022c43;
-  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: scroll;
   display: block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -16,4 +17,11 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+@media (max-width: 800px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-size: 1.6rem;
+  }
 }

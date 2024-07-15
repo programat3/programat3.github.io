@@ -1,7 +1,7 @@
 .home-page{
     .text-zone{
         position: absolute;
-        left: 10%;
+        left: 80px;
         top: 50%;
         transform: translateY(-50%);
         width: 40%;
@@ -52,6 +52,14 @@
             border-radius: 50%;
             width: 100%;
             height: auto;
+        }
+    }
+}
+
+@media (max-width: 800px){
+    .home-page{
+        .picture{
+            display: none;
         }
     }
 }

@@ -1,8 +1,8 @@
 .nav-bar{
+    position: fixed;
     background: #181818;
     width: 65px;
     height: 100%;
-    position: absolute;
     top: 0;
     z-index: 3;
     min-height: 500px;
@@ -110,4 +110,17 @@
         }
 
     }
+}
+@media (max-width: 800px){
+    .nav-bar{
+        width: 65px;
+        height: 100%;
+        min-height: 65px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        background: #181818;
+    }
+    
 }

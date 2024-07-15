@@ -26,3 +26,20 @@ table{
         }
     }
 }
+
+@media (max-width: 800px){
+    table{
+        margin-top: 0px;
+        width: 100%;
+        padding: 0px;
+        tr{
+            th{
+                font-size: 13px;
+            }
+            td{
+                font-size: 12px;
+                line-height: 12.5px;
+            }
+        }
+    }
+}
