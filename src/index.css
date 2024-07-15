@@ -7,7 +7,7 @@ body {
   font: 300 11px/11.4 'Cherry Monospace-Light', 'sans-serif';
   color: #444;
   background-color: #022c43;
-  overflow: hidden;
+  overflow: scroll;
   display: block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
