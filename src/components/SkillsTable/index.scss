@@ -1,0 +1,28 @@
+table{
+    width: 60%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #fff;
+    tr{
+        border: 1px solid #fff;
+        th{
+            border: 1px solid #fff;
+            padding: 10px;
+            text-align: center;
+            font-size: 1.2em;
+            color: #fff;
+        }
+        td{
+            border: 1px solid #fff;
+            padding: 10px;
+            text-align: center;
+            font-size: 1.2em;
+            color: #fff;
+
+            a:hover{
+                color: #ff2e63;
+
+            }
+        }
+    }
+}
