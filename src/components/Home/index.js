@@ -12,10 +12,10 @@ const Home = () => {
                    <br />
                    Lía Da Silva
                    <br />
-                   Computer Programmer
+                   Data Analyst
                 </h1>
                 <h2>
-                    Fullstack Web & Mobile Developer / Data Analyst / Game Developer
+                    Fullstack Web & Mobile Developer / Computer Programmer Analyst / Game Developer
                 </h2>
             </div>
             <div className='picture'>
