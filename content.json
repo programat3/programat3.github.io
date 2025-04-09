@@ -1,0 +1,105 @@
+{
+    "page-1": {
+        "title": {
+            "en": "That's Me!",
+            "es" : "¡Esa soy yo!"
+        },
+        "subtitle": {
+            "en" : "My ZineFolio / Curriculum",
+            "es" : "Mi Portafolio / CV"
+        },
+        "content": {
+            "en": "BY: ",
+            "es": "POR: "
+        }
+    },
+    "page-2" : {
+        "title": {
+            "en": "Experience",
+            "es" : "Experiencia"
+        },
+        "content":{
+            "en": [
+                {"exp":"Software Developer", "emp": "Skalling", "year": "(2025)"},
+                {"exp":"BI Analyst", "emp": "Miniso", "year": "(2024)"},
+                {"exp":"Data Analyst Trainee ", "emp": "\"Las Campanas\" Observatory", "year": "(2024)"},
+                {"exp":"Data Analyst Jr", "emp": "UC Chile", "year": "(2023)"}
+            ],
+            "es": [
+                {"exp":"Software Developer", "emp": "Skalling", "year": "(2025)"},
+                {"exp":"Analista BI", "emp": "Miniso", "year": "(2024)"},
+                {"exp":"Analista de Datos Trainee ", "emp": "\"Las Campanas\" Observatory", "year": "(2024)"},
+                {"exp":"Analista de Datos Jr", "emp": "UC Chile", "year": "(2023)"}
+            ]
+        }
+    },
+    "page-3": {
+        "title": {
+            "en": "Achievements",
+            "es": "Logros"
+        },
+        "content": {
+            "en": [
+                {"name": "PyCon US Presenter", "year": "2025"},
+                {"name": "MMT Leader, Duoc UC [More Women in STEM]", "year": "2023-2024"},
+                {"name": "2nd Place GameDev Hackathon, Duoc UC", "year": "2023"},
+                {"name": "CITT Leader, Duoc UC [Innovation and Technological Transference Center]", "year": "2022- 2023"},
+                {"name": "3rd Place Piano Contest", "year": "2015"}
+            ],
+            "es" : [
+                {"name": "PyCon US Charlista", "year": "2025"},
+                {"name": "Líder MMT , Duoc UC [Más Mujeres en las TICs]", "year": "2023-2024"},
+                {"name": "2do Lugar GameDev Hackathon, Duoc UC", "year": "2023"},
+                {"name": "Líder CITT, Duoc UC [Centro de Innovación y Transferencia Tecnológica]", "year": "2022- 2023"},
+                {"name": "3er Lugar Concurso de Piano", "year": "2015"}
+            ]
+        }
+    },
+    "page-4": {
+        "title": {
+            "en": "Technical Skills",
+            "es": "Habilidades Técnicas"
+        },
+        "content": {
+            "en": [
+                {"skill":"Python", "type":"Data Analysis & Back-End"},
+                {"skill":"SQL / PL-SQL", "type":"Data Analysis & Managment"},
+                {"skill":"HTML, CSS, JavaScript", "type":"Front-End Web-Development"},
+                {"skill":"Godot / Unity", "type":"Game Development"}
+            ],
+            "es": [
+                {"skill":"Python", "type":"Análisis de Datos & Back-End"},
+                {"skill":"SQL / PL-SQL", "type":"Análisis y Manejo de Datos"},
+                {"skill":"HTML, CSS, JavaScript", "type":"Desarrollo Web Front-End"},
+                {"skill":"Godot / Unity", "type":"Desarrollo de VideoJuegos"}
+            ]
+        }
+    },
+    "details":{
+        "titles": [{"en": "Software Developer", "es": "Desarrolladora de Software"}, {"en": "BI Analyst", "es": "Analista BI"},{"en": "Trainee Data Analyst", "es": "Analista de Datos Trainee"} ],
+        "subtitles": ["Skalling","Miniso Chile","\"Las Campanas\" Observatory"],
+        "content": {
+            "en": [
+                [{"desc": "Add modules to web service, in order to improve and meet the client needs", "technologies": "React JS"}, {"desc": "Analyze and detect opportunities of improvement in internal and external solutions", "technologies": "Python [Pandas]"}, {"desc": "Lead and attend meetings weekly meetings for goal check-up", "technologies": "Click-Up"}],
+                [{"desc": "Generate dashboards for the Sales Department and Operations Department", "technologies": "Python [Streamlit]"}, {"desc": "Create autamatizations for the Importations Department", "technologies":"Python [Selenium]"}, {"desc": "Create and mantain web services for invoice retreival", "technologies": "Python [Flask]"}],
+                [{"desc": "Generate dashboards to visualize the telescope metrics", "technologies": "Grafana & JavaScript [Plotly JS]"}, {"desc":"Lead and attend meetings with clients in order to understand the requirements", "technologies": "Trello, Notion"}]
+            ],
+            "es":[
+                [
+                    {"desc": "Agregar módulos al servicio web para mejorar y cumplir con las necesidades del cliente", "technologies": "React JS"},
+                    {"desc": "Analizar y detectar oportunidades de mejora en soluciones internas y externas", "technologies": "Python [Pandas]"},
+                    {"desc": "Liderar y asistir a reuniones semanales para el seguimiento de objetivos", "technologies": "Click-Up"}
+                ],
+                [
+                    {"desc": "Generar paneles para el Departamento de Ventas y el Departamento de Operaciones", "technologies": "Python [Streamlit]"},
+                    {"desc": "Crear automatizaciones para el Departamento de Importaciones", "technologies": "Python [Selenium]"},
+                    {"desc": "Crear y mantener servicios web para la recuperación de facturas", "technologies": "Python [Flask]"}
+                ],
+                [
+                    {"desc": "Generar paneles para visualizar las métricas del telescopio", "technologies": "Grafana y JavaScript [Plotly JS]"},
+                    {"desc": "Liderar y asistir a reuniones con clientes para entender los requerimientos", "technologies": "Trello, Notion"}
+                ]
+            ]
+        }
+    }
+}
