@@ -25,6 +25,7 @@ function renderPage() {
   renderExperience();
   renderAchievements();
   renderSkills();
+  
 }
 function renderExperience() {
   const title = article["page-2"]["title"][lang];
