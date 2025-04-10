@@ -5,11 +5,11 @@
     <title>Lia's Profile</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar is-fixed-top " role="navigation" aria-label="main navigation">
         <ul class="navbar-menu">
             <li class="navbar-item">
             <p><a href="">Home</a></p>
@@ -30,15 +30,39 @@
         </div>
 
     </div>
-    <div >
         
-        <div class="page-1">
-            <h1 id="title" class="title"></h1>
-            <h2 id="subtitle" class="subtitle"></h2>
-            <p id="byline"></p>
-            <p><a href="https://www.instagram.com/teje_codigo">@teje_codigo</a></p>
+      <section class="section">
+        <div class="container">
+            <div class="columns is-multiline is-centered">
+                <div class="column is-4">
+                    <div class="card ">
+                        <div class="card-content">
+                            <h1 id="title" class="title"></h1>
+                            <h2 id="subtitle" class="subtitle"></h2>
+                        </div>
+                        <div class="card-image">
+                            <figure class="image">
+                                <img src="./img/Lia.jpeg" alt="" >
+                            </figure>
+                        </div>
+                        <div class="card-footer">
+                            <p class= "card-footer-item" id="byline"></p>
+                        <p class="card-footer-item"><a href="https://www.instagram.com/teje_codigo">@teje_codigo</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+      </section>
+      <div class="section">
+        <h2 class="title is-3" id="experience-title"></h2>
+        <div id="experience-container" class="columns is-multiline is-centered"></div>
+      </div>
+      
+      <div class="section">
+        <h2 class="title is-3" id="achievements-title"></h2>
+        <div id="achievements-container" class="columns is-multiline is-centered"></div>
+      </div>
     <script src="./script.js"></script>
 </body>
 </html>

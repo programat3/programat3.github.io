@@ -15,9 +15,97 @@ function changeLanguage(newLang) {
 }
 
 function renderPage() {
-  if (!article || !article["page-1"]) return;
+  if (!article) return;
 
+  // Títulos
   document.getElementById("title").innerText = article["page-1"]["title"][lang];
   document.getElementById("subtitle").innerText = article["page-1"]["subtitle"][lang];
-  document.getElementById("byline").innerText = article["page-1"]["content"][lang] + " Lía Da Silva"; // puedes reemplazar "Lía" dinámicamente también
+  document.getElementById("byline").innerText = article["page-1"]["content"][lang] + " Lía";
+
+  renderExperience();
+  renderAchievements();
+}
+function renderExperience() {
+  const title = article["page-2"]["title"][lang];
+  const experiences = article["page-2"]["content"][lang];
+  const details = article["details"]["content"][lang];
+
+  document.getElementById("experience-title").innerText = title;
+  const container = document.getElementById("experience-container");
+  container.innerHTML = "";
+
+  experiences.forEach((item, index) => {
+    const column = document.createElement("div");
+    column.className = "column is-4";
+
+    const card = document.createElement("div");
+    card.className = "card zine-style";
+    card.style.cursor = "pointer";
+
+    const cardContent = document.createElement("div");
+    cardContent.className = "card-content";
+
+    const titleEl = document.createElement("p");
+    titleEl.className = "title is-5";
+    titleEl.innerText = item.exp;
+
+    const subtitleEl = document.createElement("p");
+    subtitleEl.className = "subtitle is-6";
+    subtitleEl.innerText = `${item.emp} ${item.year}`;
+
+    const detailEl = document.createElement("div");
+    detailEl.className = "content";
+    detailEl.style.display = "none";
+    detailEl.style.marginTop = "10px";
+
+    // Construimos el contenido extra
+    details[index].forEach(d => {
+      const p = document.createElement("p");
+      p.innerHTML = `🛠️ <strong>${d.desc}</strong><br><span class="has-text-grey">[${d.technologies}]</span>`;
+      detailEl.appendChild(p);
+    });
+
+    // Toggle al hacer clic
+    card.addEventListener("click", () => {
+      detailEl.style.display = detailEl.style.display === "none" ? "block" : "none";
+    });
+
+    cardContent.appendChild(titleEl);
+    cardContent.appendChild(subtitleEl);
+    cardContent.appendChild(detailEl);
+
+    card.appendChild(cardContent);
+    column.appendChild(card);
+    container.appendChild(column);
+  });
+}
+
+function renderAchievements() {
+  const title = article["page-3"]["title"][lang];
+  const achievements = article["page-3"]["content"][lang];
+
+  document.getElementById("achievements-title").innerText = title;
+
+  const container = document.getElementById("achievements-container");
+  container.innerHTML = "";
+
+  achievements.forEach((item) => {
+    const column = document.createElement("div");
+    column.className = "column is-3";
+
+    const card = document.createElement("div");
+    card.className = "card zine-style";
+
+    const content = document.createElement("div");
+    content.className = "card-content";
+
+    content.innerHTML = `
+      <p class="title is-5">${item.name}</p>
+      <p class="subtitle is-size-6">${item.year}</p>
+    `;
+
+    card.appendChild(content);
+    column.appendChild(card);
+    container.appendChild(column);
+  });
 }
