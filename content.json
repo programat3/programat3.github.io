@@ -64,13 +64,13 @@
             "en": [
                 {"skill":"Python", "type":"Data Analysis & Back-End"},
                 {"skill":"SQL / PL-SQL", "type":"Data Analysis & Managment"},
-                {"skill":"HTML, CSS, JavaScript", "type":"Front-End Web-Development"},
+                {"skill":"HTML, CSS, JavaScript (ReactJS)", "type":"Front-End Web-Development"},
                 {"skill":"Godot / Unity", "type":"Game Development"}
             ],
             "es": [
                 {"skill":"Python", "type":"Análisis de Datos & Back-End"},
                 {"skill":"SQL / PL-SQL", "type":"Análisis y Manejo de Datos"},
-                {"skill":"HTML, CSS, JavaScript", "type":"Desarrollo Web Front-End"},
+                {"skill":"HTML, CSS, JavaScript (React JS)", "type":"Desarrollo Web Front-End"},
                 {"skill":"Godot / Unity", "type":"Desarrollo de VideoJuegos"}
             ]
         }
@@ -82,7 +82,11 @@
             "en": [
                 [{"desc": "Add modules to web service, in order to improve and meet the client needs", "technologies": "React JS"}, {"desc": "Analyze and detect opportunities of improvement in internal and external solutions", "technologies": "Python [Pandas]"}, {"desc": "Lead and attend meetings weekly meetings for goal check-up", "technologies": "Click-Up"}],
                 [{"desc": "Generate dashboards for the Sales Department and Operations Department", "technologies": "Python [Streamlit]"}, {"desc": "Create autamatizations for the Importations Department", "technologies":"Python [Selenium]"}, {"desc": "Create and mantain web services for invoice retreival", "technologies": "Python [Flask]"}],
-                [{"desc": "Generate dashboards to visualize the telescope metrics", "technologies": "Grafana & JavaScript [Plotly JS]"}, {"desc":"Lead and attend meetings with clients in order to understand the requirements", "technologies": "Trello, Notion"}]
+                [{"desc": "Generate dashboards to visualize the telescope metrics", "technologies": "Grafana & JavaScript [Plotly JS]"}, {"desc":"Lead and attend meetings with clients in order to understand the requirements", "technologies": "Trello, Notion"}],
+                [
+                    {"desc": "Support data cleaning and analysis for ongoing academic projects", "technologies": "Python [Pandas, Jupyter]"},
+                    {"desc": "Collaborate in developing small-scale reports and visualizations", "technologies": "Google Sheets, Power BI"}
+                  ]
             ],
             "es":[
                 [
@@ -98,7 +102,11 @@
                 [
                     {"desc": "Generar paneles para visualizar las métricas del telescopio", "technologies": "Grafana y JavaScript [Plotly JS]"},
                     {"desc": "Liderar y asistir a reuniones con clientes para entender los requerimientos", "technologies": "Trello, Notion"}
-                ]
+                ],
+                [
+                    {"desc": "Apoyar en la limpieza y análisis de datos para proyectos académicos en curso", "technologies": "Python [Pandas, Jupyter]"},
+                    {"desc": "Colaborar en la elaboración de reportes y visualizaciones", "technologies": "Google Sheets, Tableau"}
+                  ]
             ]
         }
     }

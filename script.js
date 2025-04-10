@@ -20,10 +20,11 @@ function renderPage() {
   // Títulos
   document.getElementById("title").innerText = article["page-1"]["title"][lang];
   document.getElementById("subtitle").innerText = article["page-1"]["subtitle"][lang];
-  document.getElementById("byline").innerText = article["page-1"]["content"][lang] + " Lía";
+  document.getElementById("byline").innerText = article["page-1"]["content"][lang] + " Lía Da Silva";
 
   renderExperience();
   renderAchievements();
+  renderSkills();
 }
 function renderExperience() {
   const title = article["page-2"]["title"][lang];
@@ -39,8 +40,16 @@ function renderExperience() {
     column.className = "column is-4";
 
     const card = document.createElement("div");
+    
     card.className = "card zine-style";
     card.style.cursor = "pointer";
+
+    if(index %3 === 0){
+      card.classList.add("washi")
+    }
+    else{
+      card.classList.add("washi2")
+    }
 
     const cardContent = document.createElement("div");
     cardContent.className = "card-content";
@@ -89,13 +98,18 @@ function renderAchievements() {
   const container = document.getElementById("achievements-container");
   container.innerHTML = "";
 
-  achievements.forEach((item) => {
+  achievements.forEach((item, index) => {
     const column = document.createElement("div");
     column.className = "column is-3";
 
     const card = document.createElement("div");
     card.className = "card zine-style";
-
+    if(index%3 === 1){
+      card.classList.add("washi")
+    }
+    else{
+      card.classList.add("washi2")
+    }
     const content = document.createElement("div");
     content.className = "card-content";
 
@@ -105,6 +119,46 @@ function renderAchievements() {
     `;
 
     card.appendChild(content);
+    column.appendChild(card);
+    container.appendChild(column);
+  });
+}
+
+function renderSkills() {
+  const skillsTitle = article["page-4"]["title"][lang];
+  const skills = article["page-4"]["content"][lang];
+
+  document.getElementById("skills-title").innerText = skillsTitle;
+
+  const container = document.getElementById("skills-container");
+  container.innerHTML = "";
+
+  skills.forEach((skill, index) => {
+    const column = document.createElement("div");
+    column.className = "column is-4";
+
+    const card = document.createElement("div");
+    card.className = "card zine-style";
+    if(index%2 === 0){
+      card.classList.add("washi")
+    }
+    else{
+      card.classList.add("washi2")
+    }
+    const cardContent = document.createElement("div");
+    cardContent.className = "card-content";
+
+    const titleEl = document.createElement("p");
+    titleEl.className = "title is-5";
+    titleEl.innerText = skill.skill;
+
+    const subtitleEl = document.createElement("p");
+    subtitleEl.className = "subtitle is-6 ";
+    subtitleEl.innerText = skill.type;
+
+    cardContent.appendChild(titleEl);
+    cardContent.appendChild(subtitleEl);
+    card.appendChild(cardContent);
     column.appendChild(card);
     container.appendChild(column);
   });
